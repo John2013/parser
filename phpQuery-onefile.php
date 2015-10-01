@@ -5736,10 +5736,8 @@ function recursionSearch($doc){
 function recursionSearchComments($doc){
     global $arItemLink;
     global $KON;
-    //$arLink = array();
     $name_elements = $doc->find('.pagination-item-link');
-    $count = pq($name_elements)->length;
-    //'http://www.mvideo.ru/sitebuilder/blocks/browse/product-detail/tabs/product-reviews.jsp?productId='.$KON[0].'&sortBy=-published&page=1'
+    $count = pq($name_elements)->length;    
     echo $count;
     echo '<pre>';
     var_dump($KON);
