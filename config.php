@@ -2,9 +2,9 @@
 $server = 'gutfisher.ru';
 $user = 'gutfisher';
 $password = 'CClXyKIG5';
-
-$dblink = mysql_connect($server, $user, $password);
 $database = 'gutfisher_parser1';
-$selected = mysql_select_db($database, $dblink);
-mysql_query('SET NAMES utf8');
+$mysqli = new mysqli($server, $user, $password, $database);
+//$dblink = mysqli_connect($server, $user, $password);
+//$selected = mysql_select_db($database, $dblink);
+$mysqli->query('SET NAMES utf8');
 ?>
